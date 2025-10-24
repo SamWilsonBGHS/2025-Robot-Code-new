@@ -51,7 +51,7 @@ public class Elevator extends SubsystemBase {
   }
   public boolean setPoint(double goal){
     target= goal;
-    System.out.println("hello");
+    System.out.println("hello"); //This was something that was never removed
     
     return Math.abs(target-elMotor.getRotorPosition().getValueAsDouble())<OperatorConstants.kElDeadBand;
   }
